@@ -7,4 +7,4 @@
  */
 
 ?>
-<h1>Welcome to WebCommander Shopping Cart </h1>
+<h1>Welcome to WordPress Plugin starter </h1>
