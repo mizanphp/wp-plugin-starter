@@ -1,0 +1,16 @@
+{
+    "name": "mizan/wp-plugin-starter",
+    "description": "Awesome WordPress plugin development starter",
+    "type": "project",
+    "license": "GPL",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "WPPS\\Admin\\": "admin/",
+            "WPPS\\Frontend\\": "frontend/",
+            "WPPS\\Includes\\": "includes/"
+        },
+        "files": [ "helpers/helpers.php" ]
+    }
+}
