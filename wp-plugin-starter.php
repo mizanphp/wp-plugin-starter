@@ -33,24 +33,17 @@ if(file_exists(dirname(__FILE__).'/vendor/autoload.php')){
     require_once dirname(__FILE__).'/vendor/autoload.php';
 }
 
-define('WPPS_PLUGIN_PATH', plugin_dir_path(__FILE__));
-define('WPPS_PLUGIN_URL', plugin_dir_url(__FILE__));
-define('WPPS_PLUGIN_SLUG', 'wp-plugin-starter');
-define('WPPS_PLUGIN_NAME', plugin_basename(__FILE__));
-
-use WPPS\Includes\Base\Activate;
-use WPPS\Includes\Base\Deactivate;
-
 function activate_wp_plugin_starter(){
-    Activate::activate();
+    WPPS\Includes\Base\Activate::activate();
 }
+register_activation_hook(__FILE__, 'activate_wp_plugin_starter');
+
 
 function deactivate_wp_plugin_starter(){
-    Deactivate::deactivate();
+    WPPS\Includes\Base\Deactivate::deactivate();
 }
-
-register_activation_hook(__FILE__, 'activate_wp_plugin_starter');
 register_deactivation_hook(__FILE__, 'deactivate_wp_plugin_starter');
+
 
 if(class_exists('WPPS\\Includes\\Init')){
     WPPS\Includes\Init::register_services();

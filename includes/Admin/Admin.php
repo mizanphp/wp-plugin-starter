@@ -8,7 +8,9 @@
 
 namespace WPPS\Includes\Admin;
 
-class Admin
+use WPPS\Includes\Base\BaseController;
+
+class Admin extends BaseController
 {
     public function register(){
         // Add admin pages
@@ -17,11 +19,11 @@ class Admin
 
     public function add_admin_pages()
     {
-        add_menu_page('Plugin Starter', 'Plugin Starter', 'manage_options', WPPS_PLUGIN_SLUG, [$this, 'admin_dashboard'], 'dashicons-cart', 3);
+        add_menu_page('Plugin Starter', 'Plugin Starter', 'manage_options', $this->plugin_slug, [$this, 'admin_dashboard'], 'dashicons-cart', 3);
     }
 
     public function admin_dashboard()
     {
-        require_once plugin_dir_path(__FILE__) . 'templates/dashboard.php';
+        require_once $this->plugin_url . 'templates/dashboard.php';
     }
 }
