@@ -24,6 +24,6 @@ class Admin extends BaseController
 
     public function admin_dashboard()
     {
-        require_once $this->plugin_url . 'templates/dashboard.php';
+        require_once $this->plugin_path . 'templates/dashboard.php';
     }
 }

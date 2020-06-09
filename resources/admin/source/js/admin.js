@@ -1,6 +1,4 @@
 ;(function($) {
     "use strict";
-
-    console.log('From Admin Js');
-
+    console.log('Admin loaded');
 })(jQuery);

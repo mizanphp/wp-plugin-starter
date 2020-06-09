@@ -23,19 +23,19 @@ class Enqueue extends BaseController
     function admin_enqueue()
     {
         //Style
-        wp_enqueue_style('wpps-admin-style', $this->plugin_url.'resources/admin/css/admin.css');
+        wp_enqueue_style('wpps-admin-style', $this->plugin_url.'resources/admin/dist/css/admin.min.css');
 
         //Script
-        wp_enqueue_script('wpps-admin-script', $this->plugin_url.'resources/admin/js/admin.js');
+        wp_enqueue_script('wpps-admin-script', $this->plugin_url.'resources/admin/dist/js/admin.min.js');
     }
 
     //Public
     function frontend_enqueue()
     {
         //Style
-        wp_enqueue_style('wpps-admin-style', $this->plugin_url.'resources/public/css/public.css');
+        wp_enqueue_style('wpps-admin-style', $this->plugin_url.'resources/frontend/dist/css/frontend.min.css');
 
         //Script
-        wp_enqueue_script('wpps-admin-script', $this->plugin_url.'resources/public/js/public.js');
+        wp_enqueue_script('wpps-admin-script', $this->plugin_url.'resources/frontend/dist/js/frontend.min.js');
     }
 }

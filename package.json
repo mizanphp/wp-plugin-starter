@@ -1,0 +1,27 @@
+{
+  "name": "wp-plugin-starter",
+  "version": "1.0.0",
+  "description": "WordPress Plugin Starter is a boilerplate to start a plugin development in a right way",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mizanphp/wp-plugin-starter.git"
+  },
+  "author": "Mizanur Rahman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mizanphp/wp-plugin-starter/issues"
+  },
+  "homepage": "https://github.com/mizanphp/wp-plugin-starter#readme",
+  "devDependencies": {
+    "grunt": "^1.1.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-compress": "^1.6.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-imagemin": "^4.0.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.1.0",
+    "grunt-wp-i18n": "^1.0.3"
+  }
+}
